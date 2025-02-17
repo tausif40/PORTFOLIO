@@ -21,18 +21,18 @@ const projects = [
     image: "/img/morematrimony.jpg",
     stack: ["HTML", "CSS", "Javascript", "React.js", "Redux toolkit", "Tailwind CSS"],
     fullDescription: "A full description of Project 2 with more details about its features and implementation.",
-    github: "https://github.com/yourusername/project2",
+    github: "https://github.com",
     live: "https://morematrimony.com",
   },
   {
     id: 3,
-    title: "Project 3",
-    description: "A short description of Project 3",
-    image: "/placeholder.svg?height=400&width=600",
-    stack: ["Vue.js", "Express", "PostgreSQL"],
-    fullDescription: "A full description of Project 3 with more details about its features and implementation.",
-    github: "https://github.com/yourusername/project3",
-    live: "https://project3.com",
+    title: "Best Fitted Wardrobe",
+    description: "Best fitted wardrobe creates and installs luxury bespoke wardrobes and kitchens, designed and crafted in London and Essex.",
+    image: "/img/bestfittedwardrobe-co-uk.jpg",
+    stack: ["HTML", "CSS", "Javascript", "React.js", "Tailwind CSS"],
+    fullDescription: "",
+    github: "https://github.com",
+    live: "https://bestfittedwardrobe.co.uk",
   },
 ]
 
@@ -54,9 +54,9 @@ export default function Projects() {
               transition={{ duration: 0.5 }}
               className="backdrop-blur-lg bg-white bg-opacity-30 dark:bg-gray-800 dark:bg-opacity-30 rounded-xl overflow-hidden shadow-xl"
             >
-              <img src={project.image} alt={project.title} className="w-full h-48 object-cover object-top"
+              <img src={project.image} alt={project.title} className="w-full h-52 object-cover object-top"
                 onClick={() => setSelectedProject(project)} />
-              <div className="p-6">
+              <div className="px-6 pb-6 mt-4">
                 <div>
                   <h3 className="text-xl font-semibold mb-2 cursor-pointer" onClick={() => setSelectedProject(project)}>{project.title}</h3>
                   <p className="text-gray-600 dark:text-gray-300 mb-4">{project.description}</p>
@@ -75,7 +75,7 @@ export default function Projects() {
                 <div className="flex justify-between">
                   <motion.button
                     onClick={() => setSelectedProject(project)}
-                    className="bg-gradient-to-r from-pink-500 to-violet-500 text-white px-4 py-2 rounded-full hover:from-pink-600 hover:to-violet-600 transition duration-300"
+                    className="bg-gray-700 text-white px-4 py-2 rounded-full hover:from-pink-600 hover:to-violet-600 transition duration-300"
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                   >

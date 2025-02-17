@@ -14,7 +14,7 @@ const skills = [
   { name: "Tailwind CSS", icon: SiTailwindcss, color: "text-teal-500" },
   { name: "Shadcn UI", icon: SiShadcnui, color: "text-gray-600" },
   { name: "Socket IO", icon: SiSocketdotio, color: "text-gray-800" },
-  { name: "Firebase", icon: IoLogoFirebase, color: "text-[#dd2c00]" },
+  { name: "Git", icon: FaGitAlt, color: "text-red-500" },
   { name: "redux toolkit", icon: SiRedux, color: "text-[#764abc]" },
   { name: "Framer Motion", icon: SiFramer, color: "text-purple-500" },
 ]

@@ -11,17 +11,17 @@ const projects = [
     image: "/img/anyuni.jpg",
     stack: ["Next.js", "Redux", "tailwind css", "google auth", "caprch verify"],
     fullDescription: "AnyUNI is an overseas education consultant that helps students from all over the world find the perfect study abroad program.",
-    github: "https://github.com",
+    github: "https://github.com/tausif40",
     live: "https://www.anyuni.io",
   },
   {
     id: 2,
     title: "More Matrimony",
-    description: "MoreMatrimony is an online matrimonial service",
+    description: "It is an online matrimonial service. The platform allows users to create profiles, search for potential matches, and connect securely.",
     image: "/img/morematrimony.jpg",
     stack: ["HTML", "CSS", "Javascript", "React.js", "Redux toolkit", "Tailwind CSS"],
     fullDescription: "A full description of Project 2 with more details about its features and implementation.",
-    github: "https://github.com",
+    github: "https://github.com/tausif40",
     live: "https://morematrimony.com",
   },
   {
@@ -31,8 +31,38 @@ const projects = [
     image: "/img/bestfittedwardrobe-co-uk.jpg",
     stack: ["HTML", "CSS", "Javascript", "React.js", "Tailwind CSS"],
     fullDescription: "",
-    github: "https://github.com",
+    github: "https://github.com/tausif40",
     live: "https://bestfittedwardrobe.co.uk",
+  },
+  {
+    id: 4,
+    title: "My Portfolio",
+    description: "This portfolio showcases of my skills in advanced UI/UX design, animations, and performance-optimized web development.",
+    image: "/img/portfolio.jpg",
+    stack: ["HTML", "CSS", "Javascript", "NEXT", "Framer Motion", "Tailwind CSS"],
+    fullDescription: "",
+    github: "https://github.com/tausif40",
+    live: "https://tausif-portfolio-pi.vercel.app",
+  },
+  {
+    id: 5,
+    title: "Auro Terra Energy",
+    description: "Powering Sustainability with Biomass Pellets. benefits of biomass pellets as an eco-friendly and sustainable energy source",
+    image: "/img/auro-terra-energy.jpg",
+    stack: ["HTML", "CSS", "Javascript", "JQuery", "Bootstrap", "SCSS"],
+    fullDescription: "",
+    github: "https://github.com/tausif40",
+    live: "https://auro-terra-energy.vercel.app",
+  },
+  {
+    id: 5,
+    title: "patel Automotive",
+    description: "Powering Sustainability with Biomass Pellets. benefits of biomass pellets as an eco-friendly and sustainable energy source",
+    image: "/img/patelautomotive.jpg",
+    stack: ["HTML", "CSS", "Javascript", "React", "Tailwind css", "Node", "Mongo DB"],
+    fullDescription: "",
+    github: "https://github.com/tausif40/Patel-Automotive",
+    live: "thttps://patelautomotive.in",
   },
 ]
 
@@ -45,7 +75,7 @@ export default function Projects() {
         <h2 className="text-4xl font-bold text-center mb-12 bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500">
           Featured Projects
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-x-8 mb-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
           {projects.map((project) => (
             <motion.div
               key={project.id}

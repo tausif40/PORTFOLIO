@@ -21,14 +21,25 @@ export default function Hero() {
         >
           Crafting engaging web experiences with cutting-edge technologies
         </motion.p>
-        <motion.a
-          href="/"
-          className="bg-gradient-to-r from-pink-500 to-violet-500 text-white px-8 py-3 rounded-full text-lg font-semibold hover:from-pink-600 hover:to-violet-600 transition duration-300"
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-        >
-          View resume
-        </motion.a>
+        <div className="flex justify-center gap-6">
+          <motion.a
+            href="https://mail.google.com/mail/u/0/?fs=1&to=tausif6040@gmail.com&tf=cm"
+            target="_blank"
+            className="bg-gradient-to-r from-pink-500 to-violet-500 text-white px-8 py-2 rounded-full text-lg font-semibold hover:from-pink-600 hover:to-violet-600 transition duration-300"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            HIRE ME
+          </motion.a>
+          {/* <motion.a
+            href="/"
+            className="bg-gradient-to-r from-pink-500 to-violet-500 text-white px-8 py-2 rounded-full text-lg font-semibold hover:from-pink-600 hover:to-violet-600 transition duration-300"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            View resume
+          </motion.a> */}
+        </div>
       </div>
     </section>
   )

@@ -4,20 +4,20 @@ import { FaGraduationCap } from "react-icons/fa"
 
 const education = [
   {
-    degree: "Bachelor of Science in Computer Science",
-    school: "University Name",
-    year: "2018 - 2022",
+    degree: "Bachelor in Computer Application (BCA)",
+    school: "DAVV University",
+    year: "2020 - 2023",
     description: "Focused on web development, algorithms, and software engineering principles.",
   },
   {
-    degree: "Full Stack Web Development Bootcamp",
-    school: "Coding Academy",
-    year: "2022",
+    degree: "Frontend Web Development Bootcamp",
+    school: "Ypsilon IT Solution",
+    year: "2023-2024",
     description: "Intensive program covering modern web technologies and best practices.",
   },
   {
-    degree: "UI/UX Design Certification",
-    school: "Design Institute",
+    degree: "React.js Certification",
+    school: "Universal Information",
     year: "2023",
     description: "Specialized course on creating intuitive and visually appealing user interfaces.",
   },

@@ -17,7 +17,7 @@ export default function Footer() {
             href="https://www.linkedin.com/in/muhammad-tausif-0142692a9"
             target="_blank"
           >
-            <p>My resume is <span className="text-violet-800">here</span></p>
+            <p className="hidden md:block cursor-pointer">My resume is <span className="text-violet-800">here</span></p>
           </motion.a>
           <div className="flex space-x-4">
             <motion.a
@@ -50,6 +50,7 @@ export default function Footer() {
           </div>
         </motion.div>
         <div className="flex flex-col items-center justify-center mt-8">
+          <p className="block md:hidden mb-4 cursor-pointer">My resume is <span className="text-violet-800">here</span></p>
           <p className="mb-2">Thanks for visiting ❤️</p>
           <p>&copy; 2025 tausif. All rights reserved.</p>
         </div>

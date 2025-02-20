@@ -2,6 +2,7 @@ import "./globals.css"
 import { Inter } from "next/font/google"
 import { ThemeProvider } from "@/components/ThemeProvider"
 import type React from "react" // Added import for React
+import { Toaster } from "react-hot-toast";
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -23,6 +24,7 @@ export default function RootLayout({
       <body className={`${inter.className}`}>
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
           {children}
+          <Toaster position="bottom-right" reverseOrder={false} />
         </ThemeProvider>
       </body>
     </html>
@@ -30,3 +32,4 @@ export default function RootLayout({
 }
 
 import './globals.css'
+

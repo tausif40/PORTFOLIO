@@ -6,12 +6,12 @@ export default function Hero() {
     <section className="h-screen flex items-center justify-center">
       <div className="text-center">
         <motion.h1
-          className="text-7xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500"
+          className="text-5xl sm:text-6xl md:text-7xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500"
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          I'm   A Frontend Developer
+          I'm A Frontend Developer
         </motion.h1>
         <motion.p
           className="text-xl mb-8"

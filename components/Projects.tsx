@@ -30,7 +30,7 @@ const projects = [
     description: "Best fitted wardrobe creates and installs luxury bespoke wardrobes and kitchens, designed and crafted in London and Essex.",
     image: "/img/bestfittedwardrobe-co-uk.jpg",
     stack: ["HTML", "CSS", "Javascript", "React.js", "Tailwind CSS"],
-    fullDescription: "",
+    fullDescription: "Best fitted wardrobe creates and installs luxury bespoke wardrobes and kitchens, designed and crafted in London and Essex.",
     github: "https://github.com/tausif40",
     live: "https://bestfittedwardrobe.co.uk",
   },
@@ -40,27 +40,27 @@ const projects = [
     description: "This portfolio showcases of my skills in advanced UI/UX design, animations, and performance-optimized web development.",
     image: "/img/portfolio.jpg",
     stack: ["HTML", "CSS", "Javascript", "NEXT", "Framer Motion", "Tailwind CSS"],
-    fullDescription: "",
+    fullDescription: "This portfolio showcases of my skills in advanced UI/UX design, animations, and performance-optimized web development.",
     github: "https://github.com/tausif40",
     live: "https://tausif-portfolio-pi.vercel.app",
   },
   {
     id: 5,
     title: "Auro Terra Energy",
-    description: "Powering Sustainability with Biomass Pellets. benefits of biomass pellets as an eco-friendly and sustainable energy source",
+    description: "Powering Sustainability with Biomass Pellets. benefits of biomass pellets as an eco-friendly and sustainable energy source.",
     image: "/img/auro-terra-energy.jpg",
     stack: ["HTML", "CSS", "Javascript", "JQuery", "Bootstrap", "SCSS"],
-    fullDescription: "",
+    fullDescription: "Powering Sustainability with Biomass Pellets. benefits of biomass pellets as an eco-friendly and sustainable energy source.",
     github: "https://github.com/tausif40",
     live: "https://auro-terra-energy.vercel.app",
   },
   {
     id: 5,
     title: "patel Automotive",
-    description: "Powering Sustainability with Biomass Pellets. benefits of biomass pellets as an eco-friendly and sustainable energy source",
+    description: "Powering Sustainability with Biomass Pellets. benefits of biomass pellets as an eco-friendly and sustainable energy source.",
     image: "/img/patelautomotive.jpg",
     stack: ["HTML", "CSS", "Javascript", "React", "Tailwind css", "Node", "Mongo DB"],
-    fullDescription: "",
+    fullDescription: "Powering Sustainability with Biomass Pellets. benefits of biomass pellets as an eco-friendly and sustainable energy source.",
     github: "https://github.com/tausif40/Patel-Automotive",
     live: "thttps://patelautomotive.in",
   },
@@ -149,7 +149,18 @@ export default function Projects() {
               <div>
                 <h3 className="text-2xl font-bold mb-4">{selectedProject.title}</h3>
                 <p className="text-gray-600 dark:text-gray-300 mb-4">{selectedProject.fullDescription}</p>
-                <div className="flex justify-between">
+                <div className="flex flex-wrap gap-2 mb-4">
+                  {selectedProject.stack.map((tech) => (
+                    <span
+                      key={tech}
+                      // className="bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 px-2 py-1 rounded text-sm"
+                      className=" dark:text-gray-200 px-2 py-[2px] rounded-full border bg-pink-400/30 border-pink-800 text-sm text-pink-900 font-light"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+                <div className="flex gap-8 justify-end">
                   <motion.a
                     href={selectedProject.github}
                     target="_blank"

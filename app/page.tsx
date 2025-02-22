@@ -17,7 +17,7 @@ export default function Home() {
   return (
     <>
       <Toaster position="bottom-right" reverseOrder={false} />
-      <main className="min-h-screen bg-gradient-to-br from-pink-300 via-purple-300 to-indigo-300 dark:from-gray-900 dark:via-purple-900 dark:to-violet-900 text-gray-800 dark:text-white">
+      <main className=" min-h-screen bg-gradient-to-br from-pink-300 via-purple-300 to-indigo-300 dark:from-gray-900 dark:via-purple-900 dark:to-violet-900 text-gray-800 dark:text-white">
         <div className="fixed inset-0 z-0">
           <Scene />
           <MovingShapes />

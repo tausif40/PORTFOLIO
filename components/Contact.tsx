@@ -34,9 +34,9 @@ export default function Contact() {
   return (
     <motion.div
       id="contact"
-      className="py-20 backdrop-blur-lg bg-white bg-opacity-30 dark:bg-gray-800 dark:bg-opacity-30"
+      className="py-16 backdrop-blur-lg bg-white bg-opacity-30 dark:bg-gray-800 dark:bg-opacity-30"
     >
-      <div className="container mx-auto px-6">
+      <div className="container mx-auto px-6 pb-10">
         <h2 className="text-4xl font-bold text-center mb-12 bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500">
           Get in Touch
         </h2>

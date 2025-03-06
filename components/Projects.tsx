@@ -82,12 +82,12 @@ export default function Projects() {
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
-              className="backdrop-blur-lg bg-white bg-opacity-30 dark:bg-gray-800 dark:bg-opacity-30 rounded-xl overflow-hidden shadow-xl"
+              className="backdrop-blur-lg bg-white bg-opacity-30 dark:bg-gray-800 dark:bg-opacity-30 rounded-xl overflow-hidden shadow-xl flex flex-col justify-between"
             >
-              <img src={project.image} alt={project.title} className="w-full h-52 object-cover object-top"
-                onClick={() => setSelectedProject(project)} />
-              <div className="px-6 pb-6 mt-4">
-                <div>
+              <div>
+                <img src={project.image} alt={project.title} className="w-full h-52 object-cover object-top"
+                  onClick={() => setSelectedProject(project)} />
+                <div className="px-6 mt-4">
                   <h3 className="text-xl font-semibold mb-2 cursor-pointer" onClick={() => setSelectedProject(project)}>{project.title}</h3>
                   <p className="text-gray-600 dark:text-gray-300 mb-4">{project.description}</p>
                   <div className="flex flex-wrap gap-2 mb-4">
@@ -102,27 +102,27 @@ export default function Projects() {
                     ))}
                   </div>
                 </div>
-                <div className="flex justify-between">
-                  <motion.button
-                    onClick={() => setSelectedProject(project)}
-                    className="bg-gray-700 text-white px-4 py-2 rounded-full hover:from-pink-600 hover:to-violet-600 transition duration-300"
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
-                  >
-                    Learn More
-                  </motion.button>
-                  <motion.a
-                    href={project.live}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center bg-gradient-to-r from-pink-500 to-violet-500 text-white px-4 py-2 rounded-full hover:from-pink-600 hover:to-violet-600 transition duration-300"
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
-                  >
-                    <FaExternalLinkAlt className="mr-2" />
-                    Visit Site
-                  </motion.a>
-                </div>
+              </div>
+              <div className="flex justify-between px-6 pb-6 pt-2">
+                <motion.button
+                  onClick={() => setSelectedProject(project)}
+                  className="bg-gray-700 text-white px-4 py-2 rounded-full hover:from-pink-600 hover:to-violet-600 transition duration-300"
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                >
+                  Learn More
+                </motion.button>
+                <motion.a
+                  href={project.live}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center bg-gradient-to-r from-pink-500 to-violet-500 text-white px-4 py-2 rounded-full hover:from-pink-600 hover:to-violet-600 transition duration-300"
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                >
+                  <FaExternalLinkAlt className="mr-2" />
+                  Visit Site
+                </motion.a>
               </div>
             </motion.div>
           ))}
@@ -145,12 +145,12 @@ export default function Projects() {
               className="bg-white dark:bg-gray-800 rounded-xl p-8 max-w-4xl w-full flex gap-6"
               onClick={(e) => e.stopPropagation()}
             >
-              <img src={selectedProject.image} alt={selectedProject.title} className="w-72 object-cover object-top border" />
+              <img src={selectedProject?.image} alt={selectedProject?.title} className="w-72 object-cover object-top border" />
               <div>
-                <h3 className="text-2xl font-bold mb-4">{selectedProject.title}</h3>
-                <p className="text-gray-600 dark:text-gray-300 mb-4">{selectedProject.fullDescription}</p>
+                <h3 className="text-2xl font-bold mb-4">{selectedProject?.title}</h3>
+                <p className="text-gray-600 dark:text-gray-300 mb-4">{selectedProject?.fullDescription}</p>
                 <div className="flex flex-wrap gap-2 mb-4">
-                  {selectedProject.stack.map((tech) => (
+                  {selectedProject?.stack.map((tech) => (
                     <span
                       key={tech}
                       // className="bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 px-2 py-1 rounded text-sm"
@@ -162,7 +162,7 @@ export default function Projects() {
                 </div>
                 <div className="flex gap-8 justify-end">
                   <motion.a
-                    href={selectedProject.github}
+                    href={selectedProject?.github}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center bg-gray-800 text-white px-4 py-2 rounded-full hover:bg-gray-900 transition duration-300"
@@ -173,7 +173,7 @@ export default function Projects() {
                     GitHub
                   </motion.a>
                   <motion.a
-                    href={selectedProject.live}
+                    href={selectedProject?.live}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center bg-gradient-to-r from-pink-500 to-violet-500 text-white px-4 py-2 rounded-full hover:from-pink-600 hover:to-violet-600 transition duration-300"

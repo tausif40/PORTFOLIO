@@ -8,12 +8,6 @@ import toast from 'react-hot-toast';
 export default function Contact() {
   const form = useRef();
   const [loading, setLoading] = useState(false);
-  // const [formData, setFormData] = useState({
-  //   name: "",
-  //   email: "",
-  //   mobile: "",
-  //   message: "",
-  // })
 
   const handleSubmit = (e) => {
     e.preventDefault()

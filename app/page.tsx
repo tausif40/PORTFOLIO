@@ -7,6 +7,7 @@ import Projects from "@/components/Projects"
 import Education from "@/components/Education"
 import Contact from "@/components/Contact"
 import Footer from "@/components/Footer"
+import MyResume from "@/components/MyResume"
 import MovingShapes from "@/components/Animation/MovingShapes"
 import { Toaster } from "react-hot-toast";
 import "../styles/globals.css";
@@ -21,6 +22,7 @@ export default function Home() {
         <div className="fixed inset-0 z-0">
           <Scene />
           <MovingShapes />
+          {/* <MyResume /> */}
         </div>
         <div className="relative z-10">
           <Header />

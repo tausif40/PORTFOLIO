@@ -14,10 +14,10 @@ export default function Footer() {
         >
 
           <motion.a className="mb-4 md:mb-0 cursor-pointer"
-            href="https://www.linkedin.com/in/muhammad-tausif-0142692a9"
+            href="https://drive.google.com/file/d/1-fCXw-zWAA2HwmdWNW1091qaN9iCnbG_/view?usp=drive_link"
             target="_blank"
           >
-            <p className="hidden md:block cursor-pointer">My resume is <span className="text-violet-800">here</span></p>
+            <p className="hidden md:block cursor-pointer text-md px-2 py-[2px] rounded-full border bg-pink-400/30 border-pink-800 text-pink-900 font-light">My resume is <span className="text-violet-800 font-semibold">here</span></p>
           </motion.a>
           <div className="flex space-x-4">
             <motion.a
@@ -50,7 +50,10 @@ export default function Footer() {
           </div>
         </motion.div>
         <div className="flex flex-col items-center justify-center mt-8">
-          <p className="block md:hidden mb-4 cursor-pointer">My resume is <span className="text-violet-800">here</span></p>
+          <p className="block md:hidden mb-4 cursor-pointer text-md px-2 py-[2px] rounded-full border bg-pink-400/30 border-pink-800 text-pink-900 font-light ">My resume is
+            <motion.a className="text-violet-800" href="https://drive.google.com/file/d/1-fCXw-zWAA2HwmdWNW1091qaN9iCnbG_/view?usp=drive_link"
+              target="_blank">here</motion.a>
+          </p>
           <p className="mb-2">Thanks for visiting ❤️</p>
           <p>&copy; 2025 tausif. All rights reserved.</p>
         </div>

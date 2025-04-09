@@ -51,7 +51,7 @@ export default function Footer() {
         </motion.div>
         <div className="flex flex-col items-center justify-center mt-8">
           <p className="block md:hidden mb-8 cursor-pointer text-md px-2 py-[2px] rounded-full border bg-pink-400/30 border-pink-800 text-pink-900 font-light ">My resume is
-            <motion.a className="text-violet-800 font-semibold" href="https://drive.google.com/file/d/1-fCXw-zWAA2HwmdWNW1091qaN9iCnbG_/view?usp=drive_link"
+            <motion.a className="text-violet-800 font-semibold" href="https://drive.google.com/file/d/1M6J-KxvDOn5tQmoOSg63QZWYz2H0KAIC/view?usp=drivesdk"
               target="_blank">&nbsp;here</motion.a>
           </p>
           <p className="mb-2">Thanks for visiting ❤️</p>

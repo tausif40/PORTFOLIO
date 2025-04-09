@@ -21,7 +21,7 @@ export default function MyResume() {
 
 	return (
 		<motion.a
-			href="https://drive.google.com/file/d/1-fCXw-zWAA2HwmdWNW1091qaN9iCnbG_/view?usp=drive_link"
+			href="https://drive.google.com/file/d/1M6J-KxvDOn5tQmoOSg63QZWYz2H0KAIC/view?usp=drivesdk"
 			target="_blank"
 			className="fixed bottom-6 right-6 px-6 py-2 bg-blue-600 text-white rounded-full shadow-lg hover:bg-blue-700 focus:outline-none z-50"
 			initial={{ opacity: 0, y: 50 }}

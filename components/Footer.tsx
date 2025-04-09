@@ -14,7 +14,7 @@ export default function Footer() {
         >
 
           <motion.a className="mb-4 md:mb-0 cursor-pointer"
-            href="https://drive.google.com/file/d/1-fCXw-zWAA2HwmdWNW1091qaN9iCnbG_/view?usp=drive_link"
+            href="https://drive.google.com/file/d/1ER-G-IZh9QDDU3hF93jrOeayG_4ADWUS/view?usp=drive_link"
             target="_blank"
           >
             <p className="hidden md:block cursor-pointer text-md px-2 py-[2px] rounded-full border bg-pink-400/30 border-pink-800 text-pink-900 font-light">My resume is <span className="text-violet-800 font-semibold">here</span></p>

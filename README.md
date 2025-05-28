@@ -19,7 +19,7 @@ Welcome to my personal portfolio website! I'm **Tausif**, a passionate frontend 
 ## 🛠️ Tech Stack
 
 - **Framework**: [Next.js](https://nextjs.org)
-- **Language**: TypeScript & JavaScript
+- **Language**: [TypeScript]() & [JavaScript]()
 - **Styling**: [Tailwind CSS](https://tailwindcss.com)
 - **UI Components**: [Shadcn UI](https://ui.shadcn.com) , [Framer Motion](https://motion.dev) , [three js](https://threejs.org)
 - **Deployment**: [Vercel](https://vercel.com)

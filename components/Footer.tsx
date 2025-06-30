@@ -14,7 +14,7 @@ export default function Footer() {
         >
 
           <motion.a className="mb-4 md:mb-0 cursor-pointer"
-            href="https://drive.google.com/file/d/12p_1yVEb2FVqL5xZ2uRn_0voF6yf_vtq/view?usp=sharing"
+            href="https://drive.google.com/file/d/1KImdE-8ZG5BNv65_OddFp0vX_GXlCKTI/view?usp=sharing"
             target="_blank"
           >
             <p className="hidden md:block cursor-pointer text-md px-2 py-[2px] rounded-full border bg-pink-400/30 border-pink-800 text-pink-900 font-light">My resume is <span className="text-violet-800 font-semibold">here</span></p>
@@ -51,7 +51,7 @@ export default function Footer() {
         </motion.div>
         <div className="flex flex-col items-center justify-center mt-8">
           <p className="block md:hidden mb-8 cursor-pointer text-md px-2 py-[2px] rounded-full border bg-pink-400/30 border-pink-800 text-pink-900 font-light ">My resume is
-            <motion.a className="text-violet-800 font-semibold" href="https://drive.google.com/file/d/12p_1yVEb2FVqL5xZ2uRn_0voF6yf_vtq/view?usp=sharing"
+            <motion.a className="text-violet-800 font-semibold" href="https://drive.google.com/file/d/1KImdE-8ZG5BNv65_OddFp0vX_GXlCKTI/view?usp=sharing"
               target="_blank">&nbsp;here</motion.a>
           </p>
           <p className="mb-2">Thanks for visiting ❤️</p>
